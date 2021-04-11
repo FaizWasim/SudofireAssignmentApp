@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "sudofire-7c200": {
+      "hosting": {
+        "Sudofire": [
+          "sudofire-7c200"
+        ]
+      }
+    }
+  }
+}

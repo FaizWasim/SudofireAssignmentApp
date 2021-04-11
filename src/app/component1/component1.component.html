@@ -1,0 +1,19 @@
+<h3>Component1</h3>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+
+        <div class="form-group">
+          <hr>
+          <input [(ngModel)]="myData" placeholder="Enter the data" type="text" class="form-control"> <br>
+          <button (click)="publishData()" class="btn btn-primary">Send to Component1</button>
+        </div>
+
+    </div>
+    <div class="col-6">
+      <app-component2></app-component2>
+    </div>
+  </div>
+</div>
+

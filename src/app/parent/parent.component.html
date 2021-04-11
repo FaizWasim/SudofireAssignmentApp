@@ -1,0 +1,22 @@
+<h3>Parent Component</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+    <hr>
+    <input [(ngModel)]="parentTxtValue" type="text" class="form-control" placeholder="Enter the data transfer to Child"><br>
+    <button (click)="onParentButtonClick()" type="button" class="btn btn-primary">Parent click</button>
+    <hr>
+    <div class="txt">
+      Value of child text box : {{childTextBoxValue}}
+    </div>
+  </div>
+
+<div class="col-6">
+  <div class="child">
+    <h3>Child component</h3>
+    <app-child [parentText]="parentTxtValue" [parentClick]="parentClick"
+    (onTextFromChild)="updateInChildValue($event)"></app-child>
+      </div>
+    </div>
+  </div>
+</div>

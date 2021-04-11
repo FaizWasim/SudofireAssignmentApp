@@ -1,0 +1,32 @@
+
+
+  <nav class="navbar navbar-expand-xl bg-primary navbar-dark"  >
+    <ul class="navbar-nav">
+      <li class="nav-item">
+          <a routerLink="users" class="nav-link" routerLinkActive="active">API List</a>
+      </li>
+      <li class="nav-item">
+          <a routerLink="dataTransfer" class="nav-link" routerLinkActive="active">Parent Child Data Transfer</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="component" class="nav-link" routerLinkActive="active">Data Transfer(no parent child relationship)</a>
+    </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <br>
+      <h2 style="text-align: center;">{{title}}</h2>
+    <hr>
+    <div class="card">
+      <div class="card-body">
+          <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+        <span>All Rights Reserved 2021</span>
+    </div>
+  </footer>
